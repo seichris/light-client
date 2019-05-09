@@ -238,9 +238,7 @@ export class Raiden {
           break;
         default:
           throw new Error(
-            `No deploy info provided nor recognized network: {name: "${network.name}", chainId: ${
-              network.chainId
-            }}`,
+            `No deploy info provided nor recognized network: ${JSON.stringify(network)}`,
           );
       }
     }
